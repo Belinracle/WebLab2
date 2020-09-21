@@ -1,0 +1,14 @@
+body{
+    background: url('../images/bodyBack.png');
+    color: #000000;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20pt;
+    position: relative;
+    height: 100%;
+    margin-bottom:  140px;
+    padding-bottom: 140px;
+}
+html {
+    position: relative;
+    min-height: 100%;
+}

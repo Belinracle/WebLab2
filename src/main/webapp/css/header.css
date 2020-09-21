@@ -1,0 +1,13 @@
+.header{
+    height: 300px;
+    background: url("../images/headerBack.jpg") 0 -200px;
+    box-shadow:  0 -10px 8px 15px rgb(239,235,225) inset;
+    font-family: 'MyFont';
+    text-align: center;
+    font-size: 300%;
+    color: aliceblue;
+}
+@font-face{
+    font-family: 'MyFont';
+    src:url('../fonts/Breathe/Breathe-Press.ttf');
+}

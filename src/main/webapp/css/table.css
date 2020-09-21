@@ -1,0 +1,14 @@
+.table{
+    background: rgb(92, 219, 149);
+    color: #000000;
+    padding: 7px;
+    border-radius: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 15px;
+}
+table{
+    font-size: 150%;
+    width: 100%;
+    text-align: center;
+}
