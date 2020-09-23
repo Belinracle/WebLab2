@@ -5,10 +5,14 @@
     border-radius: 10px;
     margin-left: 15%;
     margin-right: 15%;
-    margin-top: 15px;
+    margin-top: 10px;
+    flex: 0 0 auto;
 }
 table{
     font-size: 150%;
     width: 100%;
     text-align: center;
+}
+table tr td:nth-child(2) {
+    word-break: break-all;
 }

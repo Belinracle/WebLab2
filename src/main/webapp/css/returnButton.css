@@ -1,0 +1,11 @@
+.justButton{
+    margin-right: 15%;
+    margin-left: 15%;
+}
+.ret-button{
+    font-size: 150%;
+    width: 100%;
+    background-color: springgreen;
+    color: white;
+    border-radius: 100%;
+}

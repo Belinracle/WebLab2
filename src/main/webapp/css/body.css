@@ -2,11 +2,12 @@ body{
     background: url('../images/bodyBack.png');
     color: #000000;
     font-family: "Times New Roman", Times, serif;
-    font-size: 20pt;
+    font-size: 20px;
     position: relative;
+    margin: 0;
     height: 100%;
-    margin-bottom:  140px;
-    padding-bottom: 140px;
+    display: flex;
+    flex-direction: column;
 }
 html {
     position: relative;
