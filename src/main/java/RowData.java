@@ -2,12 +2,12 @@ import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class rowData implements Serializable {
+public class RowData implements Serializable {
     private Point point;
     private Long start;
     private String[] results;
 
-    public rowData(String start, Point point) {
+    public RowData(String start, Point point) {
         this.point = point;
         this.start = new Long(start);
         setResults();
@@ -25,6 +25,6 @@ public class rowData implements Serializable {
 
     public String computeTime() {
         long result = System.nanoTime() - start;
-        return Long.toString(result/1000);
+        return result / 1000 +" mcs";
     }
 }

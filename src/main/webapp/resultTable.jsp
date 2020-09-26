@@ -29,7 +29,7 @@
         </thead>
         <tbody>
         <tr>
-            <c:forEach var="par" items="${requestScope.row}">
+            <c:forEach var="par" items="${requestScope.row.results}">
                 <td>${par}</td>
             </c:forEach>
         </tr>

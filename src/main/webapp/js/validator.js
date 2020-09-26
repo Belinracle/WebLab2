@@ -2,7 +2,7 @@ let textField = document.querySelector("[name=Y]");
 let select = document.querySelector("select");
 let radios = document.querySelectorAll("[name=R]");
 let form = document.querySelector(".form");
-let storage = window.sessionStorage;
+let storage = window.localStorage;
 
 document.addEventListener("DOMContentLoaded", validate);
 
@@ -10,7 +10,6 @@ textField.addEventListener("input",validate)
 radios.forEach(function (){
     this.addEventListener("click",validate)
 })
-
 
 function validate(){
     if(checkText()&&checkSelect()&&checkRadio()){
@@ -29,7 +28,7 @@ function checkText(){
         let str = textField.value.replace(',','.').trim()
         let num = parseFloat(str);
         storage.setItem("Y",str);
-        return (!isNaN(str)&&!isNaN(num)&&parseFloat(str.substr(0,14))>-5&&parseFloat(str.substr(0,14))<3)
+        return (!isNaN(+str)&&!isNaN(num)&&parseFloat(str.substr(0,14))>-5&&parseFloat(str.substr(0,14))<3)
     }catch (e){
         return false
     }

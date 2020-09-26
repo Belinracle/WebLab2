@@ -13,6 +13,9 @@ table{
     width: 100%;
     text-align: center;
 }
-table tr td:nth-child(2) {
+table tr :nth-child(2){
+    word-break: break-all;
+}
+table tr :first-child{
     word-break: break-all;
 }

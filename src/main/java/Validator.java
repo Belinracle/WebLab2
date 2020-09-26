@@ -7,7 +7,7 @@ public class Validator {
     private boolean inInterval(String param, BigDecimal min, BigDecimal max){
         try {
             BigDecimal bdec = new BigDecimal(param.replace(",", ".").trim());
-            return (bdec.compareTo(min)>0 && bdec.compareTo(max)<0);
+            return (bdec.compareTo(min)>=0 && bdec.compareTo(max)<=0);
         }catch (Exception e){
             return false;
         }
