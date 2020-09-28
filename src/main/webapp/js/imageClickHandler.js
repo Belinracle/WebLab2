@@ -1,5 +1,4 @@
 let svg = document.querySelector("svg");
-let subForm = document.querySelector("form");
 document.querySelector(".image").addEventListener("click", function (event) {
     if (checkRadio()) {
         let r = getR();
@@ -8,8 +7,10 @@ document.querySelector(".image").addEventListener("click", function (event) {
         pt.y = event.clientY;
         let globalPoint = pt.matrixTransform(svg.getScreenCTM().inverse())
         textField.value = (((-1) * (globalPoint.y - 250)) / 200 * r).toString();
-        select.insertAdjacentHTML("afterbegin", "<option selected>" + (globalPoint.x - 250) / 200 * r + "</option>");
-        subForm.submit();
+        if(checkText()) {
+            select.insertAdjacentHTML("afterbegin", "<option selected>" + (globalPoint.x - 250) / 200 * r + "</option>");
+            sendButton.click();
+        }
     }
     else{
         alert("Для того, чтобы работал выбор координат по клику на картинке, необходимо выбрать R")
